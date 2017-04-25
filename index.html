@@ -1,1 +1,539 @@
+<!DOCTYPE html>
+
+
+
+<html>
+<head>
+<title>eZeeCopy</title>
+<link rel="icon" href="ez1.png" type="image/png">
+</head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3pro.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-red.css">
+<link rel="stylesheet" media="only screen and (min-width: 287px) and (max-width:494)" href="maincss.css" type="text/css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bubblegum+Sans" />
+<body id="myPage">
+
+<!-- HTML Styling -->
+<style>
+h2{
+color: red;
+font-family: comic sans ms;
+
+}
+#price{
+font-family: "Bubblegum Sans";
+font-size: 20px;
+}
+#wic{
+font-family: "Bubblegum Sans";
+font-size: 20px;
+
+}
+#thang{
+font-family: "Bubblegum Sans";
+font-size: 20px;
+
+}
+#contac{
+font-family: "Bubblegum Sans";
+font-size: 20px;
+}
+
+#wor{
+font-family: "Bubblegum Sans";
+font-size: 20px;
+
+}
+#home{
+font-family: "Bubblegum Sans";
+font-size: 20px;
+}
+#owner{
+font-family: "Bubblegum Sans";
+font-size: 20px;
+}
+.quota{
+	font-family: "Comic Sans MS", cursive, sans-serif;
+	font-size: 18px;
+	line-height: 26.4px;
+	box-shadow: -5px 5px 20px;
+	border-radius:5px;
+	padding:15px;	
+}
+.quota1{
+	box-shadow: 10px 10px 20px;
+	border-radius:5px;
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
+	
+}
+.quota2{
+border:2px solid;
+padding:0 0 0 0;
+border-color:yellow;
+box-shadow:5px 5px 10px;
+border-radius:8px;
+
+}
+#plus{
+	font-family: "Bubblegum Sans";
+	color:white;
+}
+
+
+
+#pic{
+display: table;
+margin: 0 auto;
+}
+#tate{
+display: table;
+margin: 0 auto;
+margin-top: -50px;
+}
+#tide{
+display: table;
+margin: 0 auto;
+}
+.can{
+color: red;
+font-weight: 900;
+}
+.do{
+font-family: "Bubblegum Sans";
+}
+.at{
+font-family: "Bubblegum Sans";
+}
+.acomp{
+list-style-position: inside;
+}
+.acomp1{
+font-family: "Bubblegum Sans";
+font-size: 24px;
+}
+.acomp2{
+font-family: "Bubblegum Sans";
+font-size: 35px;
+}
+.acomp3{
+font-family: "Bubblegum Sans";
+font-size: 35px;
+text-align: center;
+
+}
+.acomp4{
+font-family: "Bubblegum Sans";
+font-size: 35px;
+text-align: center;
+
+}
+.us{
+color: red;
+font-size: 30px;
+}
+#clothes{
+font-family: "Bubblegum Sans";
+font-size: 20px;
+text-decoration:none;
+}
+.ez{
+position:fixed;
+bottom:1%;
+right:1%;
+}
+
+.imageez{
+display:block;
+margin-top:15px;
+margin-left:auto;
+margin-right:auto;
+margin-bottom:40px;
+max-width:100%;
+}
+.tablec{
+background-color:#f2f2f2;
+}
+.navp{
+background-color:#ed1c24;
+}
+
+
+
+</style>
+
+
+
+<!-- Sidebar on click
+<nav class="w3-sidebar w3-bar-block w3-white w3-card-2 w3-animate-left w3-xlarge" style="display:none;z-index:2" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-display-topright w3-text-red">Dismiss
+    <i class="fa fa-remove"></i>
+  </a>
+  <a href="#" class="w3-bar-item w3-button">Banners</a>
+  <a href="#" class="w3-bar-item w3-button">Photos</a>
+  <a href="#" class="w3-bar-item w3-button"></a>
+  <a href="#" class="w3-bar-item w3-button">Link 4</a>
+  <a href="#" class="w3-bar-item w3-button">Link 5</a>
+</nav>-->
+
+<!-- Navbar -->
+<div class="w3-top">
+ <div class="w3-bar navp w3-left-align">
+  <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars"></i></a>
+  <a id="home"  href="#" class="w3-bar-item w3-text-white w3-hover-yellow"><i class="fa fa-home w3-margin-right"></i>Home</a>
+  <!--<a id="owner" href="#team" class="w3-border-right w3-bar-item w3-button w3-hide-small w3-hover-red">Owner</a>
+  <a id="wor"  href="#work" class="w3-border-right w3-bar-item w3-button w3-hide-small w3-hover-red">Work</a>-->
+  <a id="price" href="#pricing" class="w3-border-left w3-text-white w3-border-right w3-bar-item  w3-hide-small w3-hover-yellow">Offers</a>
+  <a id="contac" href="#contact" class="w3-border-right w3-text-white w3-bar-item  w3-hide-small w3-hover-yellow">Contact</a>
+  <a id="clothes" href="https://www.tees4acause.com" class="w3-border-left w3-text-white w3-bar-item w3-hover-yellow w3-right ">@Tees4aCause &trade; </a>
+  <a id="thang" href="https://www.instagram.com/ezeecopy/" class=" w3-bar-item w3-hover-yellow w3-right "><img src="socialmedia2.png"></a>
+  <a id="wic" href="uppy.html" class="w3-border-left w3-bar-item w3-text-white  w3-hide-small w3-hover-yellow">Banners</a>
+    
+  </div>
+ 
+ </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-hide w3-hide-large w3-hide-medium">
+    <a href="#work" class="w3-bar-item w3-button w3-hover-red">Work</a>
+    <a href="#pricing" class="w3-bar-item w3-button w3-hover-red">Offers</a>
+    <a href="#contact" class="w3-bar-item w3-button w3-hover-red">Contact</a>
+  </div>
+
+
+<!-- Image Header -->
+<div class="w3-display-container w3-animate-opacity">
+  <img src="eZeeCopySign4.png" class="imageez">
+  
+<!-- Modal button -->
+  <div class=" quota2 w3-container w3-display-bottommiddle w3-margin-bottom">  
+    <button id="plus" onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-square w3-xlarge w3-hover-teal" title="SUBSCRIBE">EZcopy+</button>
+  </div>
+</div>
+
+<!-- Modal -->
+<div id="id01" class="w3-modal">
+  <div class="w3-modal-content w3-card-4 w3-animate-top">
+    <header class="w3-container w3-yellow w3-display-container"> 
+      <span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-red w3-display-topright"><i class="fa fa-remove"></i></span>
+      <h4>Make sure to follow our social media pages below for exclusive content and deals!</h4>
+      <h5>Because <strong>We</strong> can <i class="fa fa-smile-o"></i></h5>
+    </header>
+    <div class="w3-container w3-yellow">
+      <a href="https://www.facebook.com/eZeeCopy/" class="w3-button w3-large w3-red" href="javascript:void(0)" title="Facebook"><i class="fa fa-facebook"></i></a>
+	  <a href="https://twitter.com/ezeecopy" class="w3-button w3-large w3-red" href="javascript:void(0)" title="Twitter"><i class="fa fa-twitter"></i></a>
+      <a href="https://www.instagram.com/ezeecopy/" class="w3-button w3-large w3-red" href="javascript:void(0)" title="Instagram"><i class="fa fa-instagram"></i></a>
+  
+      <p>Also click the link associated to check our affiliated clothing site <a class="w3-text-red" href="https://www.tees4acause.com">www.tees4acause.com</a></p>
+    </div>
+    <footer class="w3-container w3-red">
+      <p>Thanks for being such a great customer</p>
+    </footer>
+  </div>
+</div>
+
+<!-- Owner container
+
+<div class="w3-container w3-padding-64 w3-center" id="team">
+<h2 class="acomp2">The Owner</h2>
+<p>Entrepreneur:</p>
+
+
+<div id="pic">
+	<div class="w3-row"><br>
+		<div class="w3-quarter">
+			<img src="tate1.png" alt="Boss" class="w3-circle w3-hover-opacity">
+				
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<h3 id="tate">Tate Yandle</h3>
+	<p id="tide"><i>- "Roll Tide"</i></p>-->
+
+
+<!-- Work Row -->
+<div class="w3-row-padding" id="work">
+
+<div class="w3-half">
+<h2 class="acomp3">Our Mission</h2>
+<p class="quota">Here at eZeeCopy we strive for excellence. The most effiecient custom banners, business cards, flyers and anything else that you could imagine has found a home at eZeeCopy. The work here produced is based off of a professional, timely manner, well adequeted structure. We make sure our customers get exactly what they ask for at a resonable price, and nothing less. Nothing means more to us then to have a happy customer walk out the store knowing there product has had great publication behind it from eZeeCopy &trade;</p>
+</div>
+
+<!-- Slideshow -->
+<div class="w3-half" style="margin-bottom:10%" id="sshow">
+
+<h2 class="acomp4" style="w3-mobile">Our Design</h2>
+ 
+ 
+ 
+  <img class="mySlides quota1 w3-mobile" src="businesscards.jpg" style="height:500px; max-width:75%;">
+  <img class="mySlides quota1 w3-mobile" src="6.jpg" style="height:500px; max-width:75%;">
+  <img class="mySlides quota1 w3-mobile" src="1.jpg" style="height:500px; max-width:100%; ">
+  <img class="mySlides quota1 w3-mobile" src="2.jpg" style="height:500px; max-width:100%; ">
+  <img class="mySlides quota1 w3-mobile" src="3.jpg" style="height:500px; max-width:100%; ">
+  <img class="mySlides quota1 w3-mobile" src="4.jpg" style="height:500px; max-width:100%;">
+  <img class="mySlides quota1 w3-mobile" src="5.jpg" style="height:500px; max-width:100%;">
+  <img class="mySlides quota1 w3-mobile" src="7.jpg" style="height:500px; max-width:100%;">
+
+
+  
+ 
+</div>
+
+</div>
+
+
+	
+
+
+<!-- Note -->
+<div class=" w3-center w3-panel w3-pale-red w3-leftbar w3-rightbar w3-border-yellow">
+	<h1>
+  <span class="do">Things you</span>
+  <span class="can">can accomplish</span>
+  <span class="at">at eZeeCopy</span>
+	</h1>
+	
+	
+	
+	<ul class="acomp">
+  <li class="acomp1">Take your business/event to the next level</li>
+  <li class="acomp1">Ship/Rec via UPS</li>
+  <li class="acomp1">Recieve credited publication</li>
+  <li class="acomp1">Copy.Fax.Ship</li>
+	</ul>
+  
+</div>
+
+
+
+
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+</script>
+
+
+
+<!-- Price Button 
+<div class="w3-container" style="position:relative">
+  <a onclick="w3_open()" class="w3-button w3-large w3-round w3-theme acomp2"
+  style="position:absolute;top:650px;right:16px">More</a>
+</div>-->
+
+<!-- Pricing Row -->
+<div class="w3-row-padding w3-center w3-padding-64">
+    <h2 class="acomp2">PRICING</h2>
+    <p id="pricing">Choose a pricing plan that accommodates your needs.</p><br>
+    <div class="w3-third w3-margin-bottom">
+      <ul class="w3-ul w3-border w3-hover-shadow">
+        <li class="tablec">
+          <p class="acomp1""w3-xlarge">Party Flyers</p>
+        </li>
+        <li class="w3-padding-16">Size: 4.25 x 5.5<br>(Front or Front/Back)</li>
+        <li class="tablec w3-padding-16"><b>100</b>:($15) <i>or</i> ($20)</li>
+        <li class="w3-padding-16"><b>200</b>:($25) <i>or</i> ($35)</li>
+		<li class="tablec w3-padding-16"><b>300</b>:($39) <i>or</i> ($54)</li>
+		<li class="w3-padding-16"><b>500</b>:($59) <i>or</i> ($89)</li>
+		<li class="tablec w3-padding-16"><b>1000</b>:($79) <i>or</i> ($119)</li>
+		<li class="w3-theme-l5 w3-padding-24">
+		<form method="link" action="reg.html">
+          <button class="w3-button w3-red w3-padding-large"><i class="fa fa-check"></i> Sign Up</button>
+        </form>
+		</li>
+      </ul>
+    </div>
+	
+	
+
+    <div class="w3-third w3-margin-bottom">
+      <ul class="w3-ul w3-border w3-hover-shadow">
+        <li class="tablec">
+          <p class="acomp1""w3-xlarge">Business Cards</p>
+        </li>
+        <li class="w3-padding-16">Size: 3.5 x 2<br>Front/Back $5 add on</li>
+        <li class="tablec w3-padding-16"><b>100</b>:($14.99)</li>
+        <li class="w3-padding-16"><b>250</b>:($24.99)</li>
+		<li class="tablec w3-padding-16"><b>500</b>:($39.99)</li>
+		<li class="w3-padding-16"><b>1000</b>:($59.99)</li>
+        <li class="tablec w3-padding-16"><b>Includes</b> custom design</li>
+		<li class="w3-theme-l5 w3-padding-24">
+		<form method="link" action="reg.html">
+          <button class="w3-button w3-red w3-padding-large"><i class="fa fa-check"></i> Sign Up</button>
+        </form>
+		</li>
+      </ul>
+    </div>
+
+    <div class="w3-third w3-margin-bottom">
+      <ul class="w3-ul w3-border w3-hover-shadow">
+        <li class="tablec">
+          <p class="acomp1""w3-xlarge">CD inserts</p>
+        </li>
+        <li class="w3-padding-16">Size: 4.75 x 4.75<br>(Front or Front/Back)</li>
+        <li class="tablec w3-padding-16"><b>100</b>:($19) <i>or</i> ($39)</li>
+        <li class="w3-padding-16"><b>200</b>:($29) <i>or</i> ($49)</li>
+		<li class="tablec w3-padding-16"><b>300</b>:($49) <i>or</i> ($65)</li>
+		<li class="w3-padding-16"><b>500</b>:($65) <i>or</i> ($89)</li>
+		<li class="tablec w3-padding-16"><b>1000</b>:($90) <i>or</i> ($119)</li>
+		<li class="w3-theme-l5 w3-padding-24">
+		<form method="link" action="reg.html">
+          <button class="w3-button w3-red w3-padding-large"><i class="fa fa-check"></i> Sign Up</button>
+        </form>
+		</li>
+      </ul>
+    </div>
+</div>
+
+<!-- Contact Container -->
+<div class="w3-container w3-padding-64 w3-theme-l5" id="contact">
+  <div class="w3-row">
+    <div class="w3-col m5">
+    <div class="acomp2""w3-padding-16"><span class="w3-xxlarge w3-border-teal w3-bottombar us">Contact Us</span></div>
+      <h3>Address</h3>
+	  <p>2709 Gillionville Road, Suite 3 | Albany, GA 31721
+      <p>Let us know how we did, and what we can do to help.</p>
+      <p><i class="fa fa-map-marker w3-text-red w3-xlarge"></i>  Georgia, US</p>
+      <p><i class="fa fa-phone w3-text-red w3-xlarge"></i> +229.352.5390</p>
+      <p><i class="fa fa-envelope-o w3-text-red w3-xlarge"></i> info@ezeecopy.com</p>
+    </div>
+    <div class="w3-col m7">
+      <form class="w3-container w3-card-4 w3-padding-16 w3-white" action="mailto:info@ezeecopy.com" target="_blank">
+      <div class="w3-section">      
+        <label>Name</label>
+        <input class="w3-input" type="text" name="Name" required>
+      </div>
+      <div class="w3-section">      
+        <label>Email</label>
+        <input class="w3-input" type="text" name="Email" required>
+      </div>
+      <div class="w3-section">      
+        <label>Message</label>
+        <input class="w3-input" type="text" name="Message" required>
+      </div>  
+      <input class="w3-check" type="checkbox" checked name="Like">
+      <label>I Like it!</label>
+      <button type="submit" class="w3-button w3-right w3-red">Send</button>
+      </form>
+    </div>
+  </div>
+</div>
+
+
+<!-- Google Maps -->
+<div id="googleMap" style="width:100%;height:420px;"></div>
+<script>
+function myMap()
+{
+  myCenter=new google.maps.LatLng(31.586358, -84.221009);
+  var mapOptions= {
+    center:myCenter,
+    zoom:15, scrollwheel: false, draggable: false,
+    mapTypeId:google.maps.MapTypeId.ROADMAP
+  };
+  var map=new google.maps.Map(document.getElementById("googleMap"),mapOptions);
+
+  var marker = new google.maps.Marker({
+    position: myCenter,
+  });
+  marker.setMap(map);
+}
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBG6l6eu9rEe6m_Ilt5tMeliKm8QmsHbz8&callback=myMap"></script>
+
+<!-- Owner container
+
+<div class="w3-container w3-padding-64 w3-center" id="team">
+<h2 class="acomp2">The Owner</h2>
+<p>Entrepreneur:</p>
+
+
+<div id="pic">
+	<div class="w3-row"><br>
+		<div class="w3-quarter">
+			<img src="tate1.png" alt="Boss" class="w3-circle w3-hover-opacity">
+				
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<h3 id="tate">Tate Yandle</h3>
+	<p id="tide"><i>- "Roll Tide"</i></p>-->
+
+
+<!--
+To use this code on your website, get a free API key from Google.
+Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
+-->
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-32 navp w3-center">
+  <h4>Follow Us</h4>
+  <a href="https://www.facebook.com/eZeeCopy/" class="w3-button w3-large w3-red" href="javascript:void(0)" title="Facebook"><i class="fa fa-facebook"></i></a>
+  <a href="https://twitter.com/ezeecopy" class="w3-button w3-large w3-red" href="javascript:void(0)" title="Twitter"><i class="fa fa-twitter"></i></a>
+  <a href="https://www.instagram.com/ezeecopy/" class="w3-button w3-large w3-red" href="javascript:void(0)" title="Instagram"><i class="fa fa-instagram"></i></a>
+  
+  <p>Copyright &copy; 2017 eZeeCopy.com - All Rights Reserved.</p>
+  <p>Powered by <a target="_blank">Tech Development.</a></p>
+  
+  
+
+  <div style="position:relative;bottom:100px;z-index:1;" class="w3-tooltip w3-right">
+    <span class="w3-text w3-padding w3-red w3-hide-small">Go To Top</span>   
+    <a class="w3-button w3-theme" href="#myPage"><span class="w3-xlarge">
+    <i class="fa fa-chevron-circle-up"></i></span></a>
+  </div>
+  
+  
+  
+ 
+</footer>
+
+<script>
+// Script for side navigation
+function w3_open() {
+    var x = document.getElementById("mySidebar");
+    x.style.width = "300px";
+    x.style.paddingTop = "10%";
+    x.style.display = "block";
+}
+
+// Close side navigation
+function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+}
+
+// Used to toggle the menu on smaller screens when clicking on the menu button
+function openNav() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else { 
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+</script>
+
+</html>
 
